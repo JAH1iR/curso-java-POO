@@ -1,17 +1,16 @@
-import Model.Producto;
-import Services.ProductoServices;
+import Model.InvetarioModel;
 import services.InventarioServices;
-import view.ProductoView;
+import View.ProductoView;
 
 public class ProductoMain {
     public static void main(String[] args) {
         
         
-        Producto prod = new Producto();
+        InvetarioModel prod = new InvetarioModel();
         
         
-        prod.setNombreProducto("Laptop");
-        prod.setCodigoProducto("L123");
+        prod.setDescripcion("Laptop");
+        prod.setcodigo("L123");
         prod.setPrecioBase(500.0);
         prod.setCantidadCompra(2);
         prod.setDescuento(10.0);

@@ -5,13 +5,16 @@ public class InvetarioModel {
     private String descripcion;
     private Double precioUnitario;
     private int   cantidadStock;
-public InvetarioModel (int codigo,String descripcion,Double precioUnitario,int cantidadStock) {
+    private String Producto;
+public InvetarioModel (int codigo,String descripcion,Double precioUnitario,int cantidadStock , String Producto) {
 this.codigo = codigo;
 this.descripcion = descripcion;
 this.precioUnitario = precioUnitario;
 this.cantidadStock = cantidadStock;
-
+this.Producto = Producto;
 }
+public InvetarioModel () {}
+//getters y setters
 public int getCodigo() {
     return codigo;
 }
@@ -36,4 +39,11 @@ public int getCantidadStock() {
 public void setCantidadStock(int cantidadStock) {
     this.cantidadStock = cantidadStock;
 }
+public String getProducto() {
+    return Producto;
+}
+public void setProducto(String producto) {
+    Producto = producto;
+}
+
 }

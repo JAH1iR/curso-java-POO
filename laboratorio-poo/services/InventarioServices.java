@@ -2,8 +2,8 @@ package services;
 import Model.InvetarioModel;
 public class InventarioServices {
    
-    public double calcularSubtotal(Producto producto) {
-        return producto.getPrecioBase() * producto.getCantidadCompra();
+    public double calcularSubtotal(InvetarioModel producto) {
+        return producto.getPrecioUnitario() * producto.getCantidadStock();
     };
 
     
@@ -22,4 +22,4 @@ public class InventarioServices {
         return (subtotal - montoDescuento) + impuesto;
     }
 }
-}
+

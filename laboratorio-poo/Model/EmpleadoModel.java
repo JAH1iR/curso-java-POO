@@ -13,17 +13,10 @@ public class EmpleadoModel { // Cambiado a Mayúscula
         this.nombre = nombre;
         this.puesto = puesto;
         this.salarioPorHora = salarioPorHora;
-        setHorasTrabajadas(horasTrabajadas); // Usamos el setter para validar
     }
 
     // Constructor vacío
-    public EmpleadoModel() {
-        this.idEmpleado = "sin registrar";
-        this.nombre = "sin nombre";
-        this.puesto = "sin nombrar";
-        this.salarioPorHora = 0.0;
-        this.horasTrabajadas = 0;
-    }
+    public EmpleadoModel() {} 
 
     // Getters y Setters
     public String getIdEmpleado() { return idEmpleado; }
