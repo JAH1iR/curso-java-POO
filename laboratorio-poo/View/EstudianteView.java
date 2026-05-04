@@ -1,9 +1,5 @@
 package View;
 import java.util.Scanner;
-import java.util.Scanner;
-import Model.EstudianteModel;
-import services.EstudianteService;
-
 public class EstudianteView {
    private Scanner leer = new Scanner(System.in);
 

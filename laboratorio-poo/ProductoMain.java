@@ -1,34 +1,22 @@
-import Model.InvetarioModel;
-import services.InventarioServices;
+import Model.ProductoModel;
+import services.ProductoService;
 import View.ProductoView;
 
 public class ProductoMain {
     public static void main(String[] args) {
-        
-        
-        InvetarioModel prod = new InvetarioModel();
-        
-        
-        prod.setDescripcion("Laptop");
-        prod.setcodigo("L123");
-        prod.setPrecioBase(500.0);
-        prod.setCantidadCompra(2);
-        prod.setDescuento(10.0);
-        prod.setImpuesto(7.0);
+        // 1. Instanciamos el modelo con datos (usando el constructor lleno)
+        // Parámetros: codigo, descripcion, precioUnitario, cantidadStock, Producto
+        ProductoModel prod = new ProductoModel(101, "Laptop de alto rendimiento", 1200.0, 3, "Laptop Pro");
 
-        
-        InventarioServices ps = new InventarioServices();
+        // 2. Instanciamos el servicio para la lógica y la vista para la salida
+        ProductoService service = new ProductoService();
+        ProductoView view = new ProductoView();
 
-      
-         pv = new IventarioView();
-        
-       
-        pv.ProductoView(
-            prod, 
-            ps.calcularSubtotal(prod), 
-            ps.calcularMontoDescuento(ps.calcularSubtotal(prod), prod.getDescuento()), 
-            ps.calcularMontoImpuesto(ps.calcularSubtotal(prod), ps.calcularMontoDescuento(ps.calcularSubtotal(prod), prod.getDescuento()), prod.getImpuesto()),
-            ps.calcularTotalFinal(ps.calcularSubtotal(prod), ps.calcularMontoDescuento(ps.calcularSubtotal(prod), prod.getDescuento()), 7.0) 
-        );
+        // 3. Realizamos cálculos mediante el servicio
+        double valorTotal = service.calcularValorInventario(prod);
+        boolean bajoStock = service.esBajoStock(prod);
+
+        // 4. Enviamos los datos procesados a la vista para imprimirlos
+        view.mostrarDetalle(prod, valorTotal, bajoStock);
     }
 }

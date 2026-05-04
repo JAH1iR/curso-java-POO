@@ -2,7 +2,7 @@ import Model.EmpleadoModel;
 import services.EmpleadoService;
 import View.EmpleadoView;
 
-public class MainEmpleado {
+public class EmpleadoMain {
     public static void main(String[] args) {
         // Usando lógica de constructor vacío y setters
         EmpleadoModel emp = new EmpleadoModel();

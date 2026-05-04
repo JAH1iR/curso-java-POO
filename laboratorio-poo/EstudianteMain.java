@@ -2,7 +2,7 @@ import Model.EstudianteModel;
 import View.EstudianteView;
 import services.EstudianteService;
 
-public class MainEstudiante {
+public class EstudianteMain {
     public static void main(String[] args) {
         // 1. Instanciamos los objetos necesarios
         EstudianteView vista = new EstudianteView();

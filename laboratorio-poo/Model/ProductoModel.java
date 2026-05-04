@@ -1,19 +1,19 @@
 package Model;
 
-public class InvetarioModel {
+public class ProductoModel {
     private int codigo;
     private String descripcion;
     private Double precioUnitario;
     private int   cantidadStock;
     private String Producto;
-public InvetarioModel (int codigo,String descripcion,Double precioUnitario,int cantidadStock , String Producto) {
+public ProductoModel (int codigo,String descripcion,Double precioUnitario,int cantidadStock , String Producto) {
 this.codigo = codigo;
 this.descripcion = descripcion;
 this.precioUnitario = precioUnitario;
 this.cantidadStock = cantidadStock;
 this.Producto = Producto;
 }
-public InvetarioModel () {}
+public ProductoModel () {}
 //getters y setters
 public int getCodigo() {
     return codigo;
