@@ -25,7 +25,8 @@ Cada entidad cuenta con su propio modelo, servicio y vista.
 3. Ejecuta cualquiera de los archivos `*Main.java` para probar la funcionalidad de cada entidad.
 
 ## Requisitos
-- Java 8 o superior
+- Java 21
+- 
 
 ## Autor
 - [Eric]
