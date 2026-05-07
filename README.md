@@ -28,7 +28,7 @@ Cada entidad cuenta con su propio modelo, servicio y vista.
 - Java 8 o superior
 
 ## Autor
-- [Tu Nombre Aquí]
+- [Eric]
 
 ---
 ¡Explora, modifica y aprende sobre POO con este laboratorio!
