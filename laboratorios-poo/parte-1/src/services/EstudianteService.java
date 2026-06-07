@@ -20,7 +20,7 @@ public boolean esSobresaliente(double calificacion) {
 public String estatus(double calificacion) {
     if (calificacion >= 71) {
         if (calificacion >= 71 || calificacion == 80) {
-            return "Aprobado mínimo de a leche ";
+            return "Aprobado con la nota minima , tiene que mejorar ";
         } else {
             return "Aprobado";
         }

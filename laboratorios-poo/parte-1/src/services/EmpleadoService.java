@@ -1,8 +1,10 @@
 package services;
 import Model.EmpleadoModel;
 
+// CONCEPTO: CLASE (Clase especializada en lógica o "comportamiento" externo)
 public class EmpleadoService {
 
+    // CONCEPTO: MÉTODOS (Funciones que procesan la información de los objetos)
     public double calcularSalarioBruto(EmpleadoModel e) {
         return e.getHorasTrabajadas() * e.getSalarioPorHora();
     }

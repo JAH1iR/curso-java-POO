@@ -13,7 +13,8 @@ public class VehiculoServices {
         return antiguedad;
     }
 
-    // Método para definir la categoría según la antigüedad calculada
+    // POLIMORFISMO: Este método acepta VehiculoModel y sus clases hijas (Auto, Moto, Camion, etc)
+    // Funciona con cualquier tipo que herede de VehiculoModel
     public String definirCategoria(VehiculoModel v) {
         // Primero calculamos la antigüedad usando el método de arriba
         int antiguedad = calcularAntiguedad(v);
@@ -30,4 +31,14 @@ public class VehiculoServices {
 
         return categoria;
     }
+    
+    // EJEMPLO de polimorfismo en acción (descomentar si tienes subclases):
+    /*
+    VehiculoServices service = new VehiculoServices();
+    Auto miAuto = new Auto(...);           // Subclase de VehiculoModel
+    Moto miMoto = new Moto(...);           // Subclase de VehiculoModel
+    
+    service.definirCategoria(miAuto);      //  Polimorfismo: mismo método
+    service.definirCategoria(miMoto);      //  Polimorfismo: mismo método
+    */
 }

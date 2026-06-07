@@ -1,11 +1,11 @@
 import Model.ClienteModel;
-import services.ClienteService;
 import View.ClienteView;
+import services.ClienteService;
 
 public class ClienteMain {
     public static void main(String[] args) {
         // 1. Registrar un cliente inicial
-        ClienteModel cliente = new ClienteModel(1, "Erick Bocanegra", "erick@ejemplo.com", 350.0);
+        ClienteModel cliente = new ClienteModel(18, "Erick Bocanegra", "erick@ejemplo.com", 650.0);
 
         ClienteService service = new ClienteService();
         ClienteView view = new ClienteView();

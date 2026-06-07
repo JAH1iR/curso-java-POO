@@ -1,6 +1,7 @@
 package Model;
 
 public class ClienteModel {
+    
     private int id;
     private String nombre;
     private String correo;
@@ -47,4 +48,5 @@ public class ClienteModel {
         this.montoAcumuladoCompras = montoAcumuladoCompras;
     }
 
+    
 }
