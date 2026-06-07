@@ -55,7 +55,7 @@ public class ProductoModel {
     }
 
     public void setProducto(String producto) {
-        Producto = producto;
+        this.Producto = producto;
     }
 
 }

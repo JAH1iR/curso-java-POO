@@ -81,20 +81,22 @@ public class PersonaModel {
      * param cedula - nuevo número de cédula (debe ser válido)
      */
     public void setCedula(String cedula) { 
-        
+        if (cedula != null && !cedula.trim().isEmpty()) {
             this.cedula = cedula;
         }
-    
+    }
+
 
     /**
      * Setter de Nombre con validación
      * param nombre - nuevo nombre (no puede estar vacío)
      */
     public void setNombre(String nombre) { 
-       
+        if (nombre != null && !nombre.trim().isEmpty()) {
             this.nombre = nombre;
         }
-    
+    }
+
 
     /**
      * Setter de Edad con validación

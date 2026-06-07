@@ -11,8 +11,8 @@ public class EmpleadoMain {
         emp.setIdEmpleado("6767");
         emp.setNombre("juan carlos bodoque");
         emp.setPuesto("bodegas");
-        emp.setSalarioPorHora(12.0);
-        emp.setHorasTrabajadas(80);
+        emp.setSalarioPorHora(15.0);
+        emp.setHorasTrabajadas(8);
 
         EmpleadoService serv = new EmpleadoService();
         EmpleadoView view = new EmpleadoView();

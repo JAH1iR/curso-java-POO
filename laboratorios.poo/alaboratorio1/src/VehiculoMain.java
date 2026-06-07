@@ -1,6 +1,6 @@
 import Model.VehiculoModel;
-import services.VehiculoServices;
 import View.VehiculoView;
+import services.VehiculoServices;
 
 public class VehiculoMain {
     public static void main(String[] args) {

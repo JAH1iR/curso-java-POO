@@ -4,16 +4,15 @@ public class VehiculoModel {
     private String placa;
     private String marca;
     private String modelo;
-    private int añoFabricacion;
+    private int anio;
 
-    public VehiculoModel(String placa, String marca, String modelo, int añoFabricacion) {
+    public VehiculoModel() {}
+
+    public VehiculoModel(String placa, String marca, String modelo, int anio) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
-        this.añoFabricacion = añoFabricacion;
-    }
-
-    public VehiculoModel() {
+        this.anio = anio;
     }
 
     public String getPlaca() {
@@ -40,13 +39,11 @@ public class VehiculoModel {
         this.modelo = modelo;
     }
 
-    public int getAñoFabricacion() {
-        return añoFabricacion;
+    public int getAnio() {
+        return anio;
     }
 
-    public void setAñoFabricacion(int añoFabricacion) {
-        this.añoFabricacion = añoFabricacion;
+    public void setAnio(int anio) {
+        this.anio = anio;
     }
 }
-
-

@@ -1,5 +1,4 @@
 package services;
-
 import Model.ProductoModel;
 
 public class ProductoService {
@@ -8,7 +7,6 @@ public class ProductoService {
     }
 
     public boolean esBajoStock(ProductoModel p) {
-        // Consideramos bajo stock si hay menos de 5 unidades
         return p.getCantidadStock() < 5;
     }
 }

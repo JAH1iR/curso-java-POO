@@ -16,7 +16,7 @@ public class EstudianteMain {
         estudiante.setNota(nota);
 
         // 4. Usamos el servicio para calcular todo basándonos en la nota del modelo
-        char letra = servicio.calficaciones(estudiante.getNota());
+        char letra = servicio.calificaciones(estudiante.getNota());
         boolean sobresaliente = servicio.esSobresaliente(estudiante.getNota());
         String estatus = servicio.estatus(estudiante.getNota());
 

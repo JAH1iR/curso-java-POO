@@ -13,57 +13,74 @@ public class EmpleadoModel {
     private int horasTrabajadas;
 
     // CONCEPTO: MÉTODOS (Comportamientos para construir o interactuar con el objeto)
-    public EmpleadoModel() {}
+    public EmpleadoModel() {} //constructor vacio
 
-    public EmpleadoModel(String idEmpleado, String nombre, String puesto, double salarioPorHora, int horasTrabajadas) {
+    
+    
+    public EmpleadoModel(String idEmpleado, String nombre, double salarioPorHora) {
         this.idEmpleado = idEmpleado;
         this.nombre = nombre;
-        this.puesto = puesto;
         this.salarioPorHora = salarioPorHora;
-        this.setHorasTrabajadas(horasTrabajadas);
     }
+
+
 
     public String getIdEmpleado() {
         return idEmpleado;
     }
 
+
+
     public void setIdEmpleado(String idEmpleado) {
         this.idEmpleado = idEmpleado;
     }
+
+
 
     public String getNombre() {
         return nombre;
     }
 
+
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+
 
     public String getPuesto() {
         return puesto;
     }
 
+
+
     public void setPuesto(String puesto) {
         this.puesto = puesto;
     }
+
+
 
     public double getSalarioPorHora() {
         return salarioPorHora;
     }
 
+
+
     public void setSalarioPorHora(double salarioPorHora) {
         this.salarioPorHora = salarioPorHora;
     }
+
+
 
     public int getHorasTrabajadas() {
         return horasTrabajadas;
     }
 
+
+
     public void setHorasTrabajadas(int horasTrabajadas) {
         this.horasTrabajadas = horasTrabajadas;
     }
-
     
-
-   
 }
