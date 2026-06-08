@@ -46,66 +46,30 @@ public class PersonaModel {
         this.edad = edad;
     }
 
-    // ============ 3. GETTERS (Métodos para OBTENER datos) ============
-    // Los getters solo LEEN datos, no los modifican
-    
-    /**
-     * Getter de Cédula
-     * return el número de cédula de la persona
-     */
-    public String getCedula() { 
+    public String getCedula() {
         return cedula;
     }
 
-    /**
-     * Getter de Nombre
-     * return el nombre completo de la persona
-     */
-    public String getNombre() { 
-        return nombre; 
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
     }
 
-    /**
-     * Getter de Edad
-     * return la edad en años
-     */
-    public int getEdad() { 
-        return edad; 
+    public String getNombre() {
+        return nombre;
     }
 
-    // ============ 4. SETTERS (Métodos para MODIFICAR datos) ============
-    // Los setters CAMBIAN los valores con validaciones
-    
-    /**
-     * Setter de Cédula con validación
-     * param cedula - nuevo número de cédula (debe ser válido)
-     */
-    public void setCedula(String cedula) { 
-        if (cedula != null && !cedula.trim().isEmpty()) {
-            this.cedula = cedula;
-        }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-
-    /**
-     * Setter de Nombre con validación
-     * param nombre - nuevo nombre (no puede estar vacío)
-     */
-    public void setNombre(String nombre) { 
-        if (nombre != null && !nombre.trim().isEmpty()) {
-            this.nombre = nombre;
-        }
+    public int getEdad() {
+        return edad;
     }
 
-
-    /**
-     * Setter de Edad con validación
-     * param edad - nueva edad (debe ser mayor a 0)
-     */
-    public void setEdad(int edad) { 
-        
-            this.edad = edad;
-        }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+       
     }
 
    

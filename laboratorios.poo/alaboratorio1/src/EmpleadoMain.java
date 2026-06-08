@@ -8,8 +8,14 @@ public class EmpleadoMain {
         // CONCEPTO: INSTANCIA (El uso de 'new' crea un espacio único en memoria para este empleado)
         // CONCEPTO: OBJETO (La variable 'emp' es un objeto real, con nombre "juan carlos bodoque")
         EmpleadoModel emp = new EmpleadoModel();
+        
+        // DATOS HEREDADOS (Vienen de PersonaModel)
+        emp.setNombre("Juan Carlos Bodoque");
+        emp.setCedula("PE-123-456");
+        emp.setEdad(35);
+
+        // DATOS PROPIOS (Son exclusivos de EmpleadoModel)
         emp.setIdEmpleado("6767");
-        emp.setNombre("juan carlos bodoque");
         emp.setPuesto("bodegas");
         emp.setSalarioPorHora(15.0);
         emp.setHorasTrabajadas(8);

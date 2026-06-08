@@ -9,18 +9,22 @@ public class EstudianteMain {
         EstudianteService servicio = new EstudianteService();
         EstudianteModel estudiante = new EstudianteModel();
 
-        // 2. Usamos la vista para pedir la nota
+        // 2. Datos del estudiante (Heredados de Persona)
+        estudiante.setNombre("Eric Bocanegra");
+        estudiante.setCedula("8-000-000");
+        estudiante.setEdad(21);
+
+        // 3. Usamos la vista para pedir la nota
         double nota = vista.capturarNota();
         
-        // 3. Guardamos la nota en el modelo (opcional, pero buena práctica POO)
         estudiante.setNota(nota);
 
-        // 4. Usamos el servicio para calcular todo basándonos en la nota del modelo
+        // 4. Procesamos la información con el servicio
         char letra = servicio.calificaciones(estudiante.getNota());
         boolean sobresaliente = servicio.esSobresaliente(estudiante.getNota());
         String estatus = servicio.estatus(estudiante.getNota());
 
         // 5. Le mandamos los resultados a la vista para que los imprima
-        vista.imprimirReporte(letra, sobresaliente, estatus);
+        vista.imprimirReporte(estudiante, letra, sobresaliente, estatus);
 }
 }

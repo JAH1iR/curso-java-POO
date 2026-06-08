@@ -4,8 +4,15 @@ import services.ClienteService;
 
 public class ClienteMain {
     public static void main(String[] args) {
-        // 1. Registrar un cliente inicial
-        ClienteModel cliente = new ClienteModel(18, "Erick Bocanegra", "erick@ejemplo.com", 650.0);
+        // 1. Registrar un cliente inicial (usando constructor vacío y setters)
+        ClienteModel cliente = new ClienteModel();
+        // CONCEPTO: HERENCIA - Usamos setters de PersonaModel
+        cliente.setCedula("8-6767-666");
+        cliente.setNombre("Eric Bocanegra");
+        cliente.setEdad(30);
+        // Atributos propios de ClienteModel
+        cliente.setCorreo("papin@ejemplo.com");
+        cliente.setMontoAcumuladoCompras(650.0);
 
         ClienteService service = new ClienteService();
         ClienteView view = new ClienteView();

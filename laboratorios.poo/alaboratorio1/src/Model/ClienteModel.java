@@ -1,37 +1,35 @@
 package Model;
 
-public class ClienteModel {
+// CONCEPTO: HERENCIA (ClienteModel hereda de PersonaModel)
+// Esto significa que un Cliente YA TIENE cédula, nombre y edad por ser una Persona.
+public class ClienteModel extends PersonaModel {
     
-    private int id;
-    private String nombre;
+    // Atributos específicos de Cliente
+    // Nota: 'id' y 'nombre' ya no son necesarios aquí porque se heredan de PersonaModel
     private String correo;
     private double montoAcumuladoCompras;
 
-    public ClienteModel() {}
+    // CONCEPTO: Constructor Vacío - Llama al constructor de Persona para inicializar lo básico
+    public ClienteModel() {
+        super(); // Llama al constructor de PersonaModel
+    }
 
-    public ClienteModel(int id, String nombre, String correo, double montoAcumuladoCompras) {
-        this.id = id;
-        this.nombre = nombre;
+    /**
+     * CONCEPTO: Constructor con Parámetros (Uso de Herencia)
+     *  cedula (Heredado de Persona)
+     *  nombre (Heredado de Persona)
+     *  edad (Heredado de Persona)
+     *  correo (Propio de Cliente)
+     *  montoAcumuladoCompras (Propio de Cliente)
+     */
+    public ClienteModel(String cedula, String nombre, int edad, String correo, double montoAcumuladoCompras) {
+        // 'super' envía los datos comunes a la clase padre (PersonaModel)
+        super(cedula, nombre, edad);
         this.correo = correo;
         this.montoAcumuladoCompras = montoAcumuladoCompras;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
+    // CONCEPTO: Encapsulamiento - Métodos para acceder a los atributos propios de Cliente
     public String getCorreo() {
         return correo;
     }
