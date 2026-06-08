@@ -12,7 +12,7 @@ public class UsuarioMain {
         // y Administrador (nivel, area) en un solo constructor.
         Administrador admin = new Administrador(
             "8-888-888",           // Cédula (Persona)
-            "Erick Administrador", // Nombre (Persona)
+            "Eric Administrador", // Nombre (Persona)
             25,                    // Edad (Persona)
             1,                     // ID (Usuario)
             "admin@empresa.com",   // Correo (Usuario)
@@ -36,6 +36,6 @@ public class UsuarioMain {
         // El servicio pedirá datos por consola y los comparará con el objeto 'admin'
         servicio.validarAdministrador(admin);
 
-        System.out.println("\nFin de la prueba.");
+        System.out.println("\nIntentelo mas tarde.");
     }
 }
